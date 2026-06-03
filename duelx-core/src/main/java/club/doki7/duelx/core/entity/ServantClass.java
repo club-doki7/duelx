@@ -8,6 +8,9 @@ public enum ServantClass {
     // Aberrant classes
     RULER, AVENGER, SHIELDER,
 
+    // Boss class, the Kaiju (怪兽)
+    KAIJU,
+
     // FGO Toilet Paper classes
     PRETENDER, FOREIGNER, MOON_CANCER, BEAST
 }
