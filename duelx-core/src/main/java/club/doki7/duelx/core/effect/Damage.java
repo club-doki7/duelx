@@ -1,25 +1,24 @@
 package club.doki7.duelx.core.effect;
 
 import club.doki7.duelx.core.entity.AbstractEntity;
-import club.doki7.duelx.util.Onion;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
 
-public record Damage(
-    int amount,
-    List<@Onion(Tag.class) Object> tags,
-    AbstractEntity source
-) implements Effect {
-    public enum Tag {
-        Physical,
-        Magecraft,
-        Real,
+public final class Damage extends AbstractEffect {
+    public int amount;
 
-        Melee,
-        Ranged,
-        Instant
+    public Damage(int effectDepth,
+                  @Nullable AbstractEntity source,
+                  List<AbstractEntity> targets,
+                  int tag,
+                  int amount) {
+        super(effectDepth, source, targets, tag);
+        this.amount = amount;
     }
 
-    void onEntity(AbstractEntity entity) {}
+    @Override
+    public void dispatch(AbstractEntity target) {
+    }
 }
