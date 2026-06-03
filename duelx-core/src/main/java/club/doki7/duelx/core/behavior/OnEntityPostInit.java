@@ -6,6 +6,5 @@ import org.jetbrains.annotations.Nullable;
 
 
 non-sealed public interface OnEntityPostInit extends Behavior {
-    @Nullable Predicate<AbstractEntity> selector();
     void onEntityPostInit(AbstractEntity entity);
 }

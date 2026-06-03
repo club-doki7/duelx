@@ -6,5 +6,6 @@ public sealed interface Command {
     int actionCount();
 
     non-sealed interface Action extends Command {}
+
     non-sealed interface Reaction extends Command {}
 }
