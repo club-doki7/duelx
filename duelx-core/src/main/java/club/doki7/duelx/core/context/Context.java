@@ -1,4 +1,4 @@
 package club.doki7.duelx.core.context;
 
-public final class BattleContext {
+public final class Context {
 }

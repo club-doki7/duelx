@@ -1,7 +1,7 @@
 package club.doki7.duelx.core.command;
 
 
-import club.doki7.duelx.core.effect.AbstractEffect;
+import club.doki7.duelx.core.event.AbstractEvent;
 
 public sealed interface Command {
     String commandName();
@@ -12,6 +12,6 @@ public sealed interface Command {
     }
 
     non-sealed interface Reaction extends Command {
-        boolean canReactTo(AbstractEffect effect);
+        boolean canReactTo(AbstractEvent event);
     }
 }

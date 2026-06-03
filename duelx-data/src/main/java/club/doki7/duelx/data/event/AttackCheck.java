@@ -1,17 +1,17 @@
-package club.doki7.duelx.data.effect;
+package club.doki7.duelx.data.event;
 
-import club.doki7.duelx.core.effect.AbstractEffect;
+import club.doki7.duelx.core.event.AbstractEvent;
 import club.doki7.duelx.core.entity.AbstractEntity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public final class AttackCheck extends AbstractEffect {
-    public AttackCheck(int effectDepth,
+public final class AttackCheck extends AbstractEvent {
+    public AttackCheck(int eventDepth,
                        @Nullable AbstractEntity source,
                        List<AbstractEntity> targets,
                        int tag) {
-        super(effectDepth, source, targets, tag);
+        super(eventDepth, source, targets, tag);
     }
 
     @Override

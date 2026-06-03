@@ -1,6 +1,6 @@
-package club.doki7.duelx.core.effect;
+package club.doki7.duelx.core.event;
 
-public final class EffectTag {
+public final class EventTag {
     public static final long MELEE = 1;
     public static final long RANGED = 1 << 1;
     public static final long INSTANT = 1 << 2;
