@@ -1,9 +1,12 @@
 package club.doki7.duelx.data.skillp;
 
+import club.doki7.duelx.core.behavior.Behavior;
 import club.doki7.duelx.core.common.Rank;
 import club.doki7.duelx.core.common.RankMod;
 import club.doki7.duelx.core.skill.Skill;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 
 public record EyeOfTheMind(@NotNull RankMod rankMod, boolean isTrue) implements Skill {
@@ -19,5 +22,10 @@ public record EyeOfTheMind(@NotNull RankMod rankMod, boolean isTrue) implements 
     @Override
     public String description() {
         return "";
+    }
+
+    @Override
+    public List<Behavior> behaviors() {
+        return List.of();
     }
 }

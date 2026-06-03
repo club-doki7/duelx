@@ -5,5 +5,11 @@ public sealed interface Behavior permits
         OnEntityPreInit,
         OnEntityPostInit,
         OnBeforeEvent,
-        OnAfterEvent
-{}
+        OnAfterEvent,
+        OnBeforeEventGlobal,
+        OnAfterEventGlobal
+{
+    default int priority() {
+        return -1;
+    }
+}
