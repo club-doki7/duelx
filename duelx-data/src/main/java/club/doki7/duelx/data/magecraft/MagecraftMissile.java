@@ -2,6 +2,10 @@ package club.doki7.duelx.data.magecraft;
 
 import club.doki7.duelx.core.command.Command;
 import club.doki7.duelx.core.command.Magecraft;
+import club.doki7.duelx.core.context.Context;
+import club.doki7.duelx.core.entity.AbstractEntity;
+
+import java.util.List;
 
 
 public enum MagecraftMissile implements Command.Action, Magecraft {
@@ -25,5 +29,15 @@ public enum MagecraftMissile implements Command.Action, Magecraft {
     @Override
     public boolean promotable() {
         return true;
+    }
+
+    @Override
+    public TargetKind targetKind() {
+        return TargetKind.SINGLE;
+    }
+
+    @Override
+    public void execute(Context cx, AbstractEntity source, List<AbstractEntity> targets) {
+
     }
 }
