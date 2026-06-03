@@ -1,6 +1,6 @@
 package club.doki7.duelx.core.effect;
 
-import club.doki7.duelx.core.entity.Entity;
+import club.doki7.duelx.core.entity.AbstractEntity;
 import club.doki7.duelx.util.Onion;
 
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 public record Damage(
     int amount,
     List<@Onion(Tag.class) Object> tags,
-    Entity<?> source
+    AbstractEntity source
 ) implements Effect {
     public enum Tag {
         Physical,
@@ -21,5 +21,5 @@ public record Damage(
         Instant
     }
 
-    void onEntity(Entity<?> entity) {}
+    void onEntity(AbstractEntity entity) {}
 }
