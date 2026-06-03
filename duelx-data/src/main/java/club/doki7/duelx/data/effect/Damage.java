@@ -1,5 +1,6 @@
-package club.doki7.duelx.core.effect;
+package club.doki7.duelx.data.effect;
 
+import club.doki7.duelx.core.effect.AbstractEffect;
 import club.doki7.duelx.core.entity.AbstractEntity;
 import org.jetbrains.annotations.Nullable;
 
