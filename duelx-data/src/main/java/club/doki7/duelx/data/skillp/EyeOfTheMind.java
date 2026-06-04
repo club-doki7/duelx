@@ -15,7 +15,7 @@ public record EyeOfTheMind(@NotNull RankMod rankMod, boolean isTrue) implements 
     }
 
     @Override
-    public String name() {
+    public String skillName() {
         return isTrue ? "心眼·真" : "心眼·伪";
     }
 

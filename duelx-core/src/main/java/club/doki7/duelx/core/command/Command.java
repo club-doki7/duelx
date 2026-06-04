@@ -1,12 +1,12 @@
 package club.doki7.duelx.core.command;
 
-
 import club.doki7.duelx.core.context.Context;
 import club.doki7.duelx.core.entity.AbstractEntity;
 import club.doki7.duelx.core.event.AbstractEvent;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+
 
 public sealed interface Command {
     String commandName();

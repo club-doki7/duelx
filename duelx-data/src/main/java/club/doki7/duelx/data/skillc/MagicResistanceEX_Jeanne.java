@@ -8,9 +8,11 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 
-public class MagicResistanceEX_Jeanne implements Skill {
+public enum MagicResistanceEX_Jeanne implements Skill {
+    INSTANCE;
+
     @Override
-    public String name() {
+    public String skillName() {
         return "对魔力";
     }
 

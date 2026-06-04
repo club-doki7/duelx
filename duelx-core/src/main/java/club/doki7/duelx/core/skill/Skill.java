@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public interface Skill {
-    String name();
+    String skillName();
     String description();
     @Nullable RankMod rankMod();
 

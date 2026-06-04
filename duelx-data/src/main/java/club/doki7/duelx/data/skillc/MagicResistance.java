@@ -15,7 +15,7 @@ public record MagicResistance(@NotNull RankMod rankMod) implements Skill {
     }
 
     @Override
-    public String name() {
+    public String skillName() {
         return "对魔力";
     }
 
