@@ -1,15 +1,17 @@
 package club.doki7.duelx.core.entity;
 
-import club.doki7.duelx.core.behavior.Behavior;
+import club.doki7.duelx.core.behavior.OnAfterEvent;
+import club.doki7.duelx.core.behavior.OnBeforeEvent;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 
 
 public abstract class AbstractEntity {
     public final String name;
     public final int faction;
 
-    public final HashSet<Behavior> behaviors = new HashSet<>();
+    public final ArrayList<OnBeforeEvent> onBeforeEvents = new ArrayList<>();
+    public final ArrayList<OnAfterEvent> onAfterEvents = new ArrayList<>();
 
     protected AbstractEntity(String name, int faction) {
         this.name = name;

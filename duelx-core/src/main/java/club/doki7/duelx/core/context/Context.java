@@ -6,6 +6,6 @@ import club.doki7.duelx.core.behavior.OnBeforeEventGlobal;
 import java.util.ArrayList;
 
 public final class Context {
-    public final ArrayList<OnBeforeEventGlobal> globalBeforeEvents = new ArrayList<>();
-    public final ArrayList<OnAfterEventGlobal> globalAfterEvents = new ArrayList<>();
+    public final ArrayList<OnBeforeEventGlobal> globalOnBeforeEvents = new ArrayList<>();
+    public final ArrayList<OnAfterEventGlobal> globalOnAfterEvents = new ArrayList<>();
 }
